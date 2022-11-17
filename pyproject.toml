@@ -1,0 +1,44 @@
+[project]
+name = "magicsquare"
+version = "2022.11.17"
+description = "Magic Squares are fun!"
+readme = "Readme.md"
+requires-python = ">=3.9"
+license = {file = "LICENSE.txt"}
+keywords = ["square", "magic", "fun", "game"]
+authors = [
+  {email = "matthias@example.org"},
+  {name = "Matthias C."}
+]
+maintainers = [
+  {name = "Matthias C.", email = "matthias@example.org"}
+]
+classifiers = [
+  "Development Status :: 1 - Beta",
+  "Programming Language :: Python"
+]
+
+dependencies = [
+  "numpy",
+]
+
+[project.optional-dependencies]
+test = [
+  "pytest",
+  "pytest-cov"
+]
+
+[project.urls]
+homepage = "https://github.com/matthcol/magicsquare"
+documentation = "https://github.com/matthcol/magicsquare"
+repository = "https://github.com/matthcol/magicsquare"
+changelog = "https://github.com/matthcol/magicsquare/blob/main/CHANGELOG.md"
+
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests",
+]
+pythonpath = [
+  "src"
+]
